@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Firebase web</title>
+<link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+    
+<body>
+<div>
+    
+    <label for="fname" ><h1 align="center">DEVAM Firebase web</h1></label>
+    
+    <input type="text" id="mText"  placeholder="text...">
+
+    <input class="btn"  type="submit" value="Save" onclick="submitbtn()" >
+    
+</div>    
+ 
+   
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB89TH5zJpak6SiX0mSfQ4n35mEgkAXmm0",
+        authDomain: "ifrebase-web-app.firebaseapp.com",
+        databaseURL: "https://ifrebase-web-app.firebaseio.com",
+        projectId: "ifrebase-web-app",
+        storageBucket: "",
+        messagingSenderId: "358012654424"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    
+    <script src="myjs.js"></script>   
+    
+</body>
+    
+</html>
