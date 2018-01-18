@@ -17,3 +17,15 @@ function submitbtn(){
    
    
 }
+
+
+ var img = document.getElementById("image-file");
+
+    img.addEventListener('change', function(e){
+                var file = e.target.files[0];
+
+                var storageRef = firebase.storage().ref().child(file.name);;
+                storageRef.put(file);
+        
+});
+ 
