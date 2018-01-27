@@ -24,7 +24,8 @@ function submitbtn(){
     img.addEventListener('change', function(e){
                 var file = e.target.files[0];
 
-                var storageRef = firebase.storage().ref().child(file.name);;
+                var storageRef = firebase.storage().ref().child(file.name);
+        //  var storageRef = firebase.storage().ref().child("image");  
                 storageRef.put(file);
         
 });
